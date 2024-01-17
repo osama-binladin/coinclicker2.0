@@ -1,5 +1,6 @@
+import com.example.coinclickergameict.R
 
-ackage com.example.coinclickergameict
+package com.example.coinclickergameict
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
