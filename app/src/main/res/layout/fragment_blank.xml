@@ -6,65 +6,69 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BlankFragment"
-    >
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginBottom="32dp"
-        android:backgroundTint="#00FEFEFE"
-        android:cropToPadding="false"
-        android:scaleType="fitXY"
-        android:src="@drawable/start_knop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="1.0" />
+   android:background="@drawable/backround_game" >
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="56dp"
-        android:layout_height="59dp"
-        android:background="#FEFEFE"
+        android:layout_width="47dp"
+        android:layout_height="46dp"
+        android:background="#00FEFEFE"
         android:scaleType="fitXY"
         android:src="@drawable/_1094"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintHorizontal_bias="0.956"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="254dp"
-        android:layout_height="233dp"
-        android:layout_marginTop="48dp"
-        android:background="#00FEFEFE"
-        android:backgroundTint="#00FFFFFF"
+        android:layout_width="224dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="520dp"
         android:scaleType="fitXY"
-        android:src="@drawable/schermafbeelding_2024_01_10_141841"
+        android:src="@drawable/coint_backround_rechts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="358dp"
+        android:layout_height="242dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo_game"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="183dp"
+        android:layout_height="170dp"
+        android:background="#0CFEFEFE"
+        android:scaleType="fitXY"
+        android:src="@drawable/start_knop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.229" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="268dp"
+        android:layout_height="71dp"
+        android:text="𝕔𝕠𝕚𝕟 𝕔𝕝𝕚𝕔𝕜𝕖𝕣"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="197dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="128dp"
-        android:fontFamily="serif"
-        android:text="Coin clicker"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="34sp"
-        android:typeface="monospace"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.689" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
