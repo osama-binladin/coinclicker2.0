@@ -1,7 +1,7 @@
-import com.example.coinclickergameict.R
+
 
 package com.example.coinclickergameict
-
+import com.example.coinclickergameict.R
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 

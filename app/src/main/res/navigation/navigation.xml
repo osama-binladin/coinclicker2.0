@@ -13,10 +13,18 @@
         <action
             android:id="@+id/action_blankFragment_to_settings"
             app:destination="@id/settings" />
+        <action
+            android:id="@+id/action_blankFragment_to_blankFragment2"
+            app:destination="@id/blankFragment2" />
     </fragment>
     <fragment
         android:id="@+id/settings"
         android:name="com.example.coinclickergameict.settings"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/blankFragment2"
+        android:name="com.example.coinclickergameict.BlankFragment2"
+        android:label="fragment_blank2"
+        tools:layout="@layout/fragment_blank2" />
 </navigation>
