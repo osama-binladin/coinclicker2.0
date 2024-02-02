@@ -6,7 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
+import androidx.navigation.Navigation
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -23,6 +25,8 @@ class BlankFragment2 : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    var counter = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -38,12 +42,14 @@ class BlankFragment2 : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_blank2, container, false)
 
-        view.findViewById<Button>(R.id.imageButton6).setOnClickListener {
-            var counter = 0
-            counter = counter + 1
-            view.findViewById<TextView>(R.id.coin_counter).text = counter.toString()
-        }
+        view.findViewById<ImageButton>(R.id.imageButton6).setOnClickListener {
 
+            counter = counter + 1
+            view.findViewById<TextView>(R.id.counter_coins).text = counter.toString()
+        }
+        view.findViewById<ImageButton>(R.id.settings).setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_blankFragment2_to_settings)
+        }
         return view
     }
 
