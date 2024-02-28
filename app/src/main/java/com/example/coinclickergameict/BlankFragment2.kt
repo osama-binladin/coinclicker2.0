@@ -38,7 +38,7 @@ class BlankFragment2 : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ) {
+    ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_blank2, container, false)
 
@@ -50,9 +50,7 @@ class BlankFragment2 : Fragment() {
         view.findViewById<ImageButton>(R.id.settings).setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_blankFragment2_to_settings)
 
-            view.findViewById<ImageButton>(R.id.startknop).setOnClickListener {
-                Navigation.findNavController(view).navigate(R.id.action_blankFragment2_to_shop)
-        }
+}
         return view
     }
-    } }
+    }
