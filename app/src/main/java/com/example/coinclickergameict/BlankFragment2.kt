@@ -26,6 +26,9 @@ class BlankFragment2 : Fragment() {
     private var param2: String? = null
 
     var counter = 0
+    fun setup(view: View) {
+        view.findViewById<TextView>(R.id.counter_coins).text = counter.toString()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,16 +42,19 @@ class BlankFragment2 : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+
+
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_blank2, container, false)
-
+ setup(view)
         view.findViewById<ImageButton>(R.id.imageButton6).setOnClickListener {
 
             counter = counter + 1
             view.findViewById<TextView>(R.id.counter_coins).text = counter.toString()
         }
-        view.findViewById<ImageButton>(R.id.settings).setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_blankFragment2_to_settings)
+        view.findViewById<ImageButton>(R.id.knop_cool).setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_settings_to_blankFragment4)
 
 }
         return view
