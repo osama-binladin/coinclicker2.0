@@ -38,7 +38,7 @@ class BlankFragment : Fragment() {
 
         val view = inflater.inflate(R.layout.fragment_blank , container, false)
         view.findViewById<ImageButton>(R.id.startknop).setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_blankFragment_to_blankFragment2)
+            Navigation.findNavController(view).navigate(R.id.blankFragment2)
 
 
         }

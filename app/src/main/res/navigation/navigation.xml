@@ -25,9 +25,6 @@
         <action
             android:id="@+id/action_settings_to_blankFragment22"
             app:destination="@id/blankFragment2" />
-        <action
-            android:id="@+id/action_settings_to_blankFragment4"
-            app:destination="@id/blankFragment4" />
     </fragment>
     <fragment
         android:id="@+id/blankFragment2"
@@ -37,14 +34,5 @@
         <action
             android:id="@+id/action_blankFragment2_to_settings"
             app:destination="@id/settings" />
-    </fragment>
-    <fragment
-        android:id="@+id/blankFragment4"
-        android:name="com.example.coinclickergameict.BlankFragment4"
-        android:label="fragment_blank4"
-        tools:layout="@layout/fragment_blank4" >
-        <action
-            android:id="@+id/action_blankFragment4_to_blankFragment2"
-            app:destination="@id/blankFragment2" />
     </fragment>
 </navigation>

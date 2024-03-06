@@ -47,7 +47,7 @@
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="76dp"
+        android:layout_marginBottom="108dp"
         android:src="@drawable/goud_lijntje"
         app:layout_constraintBottom_toTopOf="@+id/imageButton6"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
@@ -78,4 +78,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.636" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

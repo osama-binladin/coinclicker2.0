@@ -36,16 +36,15 @@ class settings : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-  val view = inflater.inflate(R.layout.fragment_settings, container, false)
+        val view = inflater.inflate(R.layout.fragment_settings, container, false)
 
         view.findViewById<ImageButton>(R.id.homebutton).setOnClickListener {
             Navigation.findNavController(view).navigateUp()
 
-            view.findViewById<ImageButton>(R.id.).setOnClickListener {
-                Navigation.findNavController(view).navigate(R.id.action_blankFragment4_to_blankFragment2)
+
 
             }
-            for (e in return view) {
-
-            }
+        return view
     }
+    }
+

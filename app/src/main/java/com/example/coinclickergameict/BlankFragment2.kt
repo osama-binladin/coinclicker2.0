@@ -44,19 +44,22 @@ class BlankFragment2 : Fragment() {
     ): View? {
 
 
-
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_blank2, container, false)
- setup(view)
+        setup(view)
         view.findViewById<ImageButton>(R.id.imageButton6).setOnClickListener {
 
             counter = counter + 1
             view.findViewById<TextView>(R.id.counter_coins).text = counter.toString()
         }
-        view.findViewById<ImageButton>(R.id.knop_cool).setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_settings_to_blankFragment4)
 
-}
+        view.findViewById<ImageButton>(R.id.settings).setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.settings)
+
+
+        }
+
         return view
+
     }
-    }
+}
