@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.navigation.Navigation
 
@@ -44,21 +45,57 @@ class BlankFragment2 : Fragment() {
     ): View? {
 
 
-        // Inflate the layout for this fragment
+
+
+
+                // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_blank2, container, false)
         setup(view)
         view.findViewById<ImageButton>(R.id.imageButton6).setOnClickListener {
 
+
+
             counter = counter + 1
             view.findViewById<TextView>(R.id.counter_coins).text = counter.toString()
+
+
+            if ( counter > 49 ) {
+                view.findViewById<ImageView>(R.id.backround_coins)
+                    .setImageResource(R.drawable.coins__drop)
+
+
+                if (counter > 99) {
+                    view.findViewById<ImageView>(R.id.imageView9)
+                        .setImageResource(R.drawable.gold_bars_pallet)
+
+
+                }
+
+            }
+
+
         }
 
-        view.findViewById<ImageButton>(R.id.settings).setOnClickListener {
+              view.findViewById<ImageButton>(R.id.settings). setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.settings)
 
 
         }
 
+
+        if ( counter > 49 ) {
+            view.findViewById<ImageView>(R.id.backround_coins)
+                .setImageResource(R.drawable.coins__drop)
+
+
+            if (counter > 99) {
+                view.findViewById<ImageView>(R.id.imageView9)
+                    .setImageResource(R.drawable.gold_bars_pallet)
+
+
+            }
+
+        }
         return view
 
     }
